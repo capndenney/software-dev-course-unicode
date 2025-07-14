@@ -47,9 +47,22 @@ let index2 = 2;
 
 Expected Output:
 codePointDifference: 16 // 'C' = 67, 't' = 116, |67 - 116| = 16
+*/
 
+let codeword = "Golfer";
+let codewordSum = codeword.charCodeAt(0) + codeword.charCodeAt(1);
+console.log(codewordSum);
 
+let charCode = [76,117,110,99,104];
+let convertedCode = String.fromCharCode(charCode[0])+String.fromCharCode(charCode[1])+String.fromCharCode(charCode[2])+String.fromCharCode(charCode[3])+String.fromCharCode(charCode[4]);
+console.log (convertedCode);
 
+let index1 = 0;
+let index2 = 3;
+let golferDifference = Math.abs(codeword.charCodeAt(index1) - codeword.charCodeAt(index2));
+console.log(golferDifference);
+
+/*
 Practice Problem #2
 
 Objective
@@ -86,15 +99,18 @@ Assign the result to a variable named swappedString.
 //Starter Code
 // Task 1
 let inputString1 = "Code";
-let firstCodePoint; // Your code here
-let thirdCodePoint; // Your code here
+let firstCodePoint = inputString1.charCodeAt(0);
+let thirdCodePoint = inputString1.charCodeAt(2);
+console.log(`The first character code is ${firstCodePoint} and the third character code is ${thirdCodePoint}.`);
 
 // Task 2
-let wordFromCodePoints; // Your code here
+let wordFromCodePoints = String.fromCharCode(72, 101, 108, 108); 
 
 // Task 3
-let inputString2 = "Launch";
-let swappedString; // Your code here
+let inputString2 = "Launch"; 
+let index3 = inputString2.charCodeAt(0);
+let index4 = inputString2.charCodeAt(5);
+let swappedString = String.fromCharCode([index4])+ "aunc" + String.fromCharCode([index3]);
 
 // Log all results
 console.log({
